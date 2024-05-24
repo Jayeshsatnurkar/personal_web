@@ -1,0 +1,14 @@
+
+#nav-btn{
+  right:0;
+  
+}
+
+#nav-btn:hover{
+ background-color: brown;
+}
+.nav-link:hover{
+    text-decoration: underline;
+     font-weight: 500;
+     cursor: pointer;
+}
