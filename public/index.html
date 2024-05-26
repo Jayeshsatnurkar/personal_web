@@ -11,21 +11,126 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="bg-gradient">
-    <div class="container-fluid">
-        <div class=" navbar shadow-lg  d-flex justify-content-space-around fs-4  gap-2 position-relative">
-            <ul class=" fs-2 nav-link">Home</ul>
-            <ul class=" fs-2 nav-link">About Us</ul>
-            <ul class=" fs-2 nav-link">Services</ul>
-            <button id="nav-btn" class="btn btn-dark  ">click !</button>
+<body class="">
+    <div class="container-fluid bg-black py-1 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class=" col navbar-contact-text">
+                    <span class="fw-bolder">+91 8767026956| jayeshsatnurkar1@gmail.com</span>
+                </div>
+                <div class="col navbar-social-icons text-light d-flex justify-content-end align-items-center gap-3">
+                    <i class=" fa-brands fa-facebook fs-5"></i>
+                    <i class=" fa-brands fa-instagram fs-5"></i>
+                    <i class=" fa-brands fa-linkedin fs-5"></i>
+                    <i class="fa-brands fa-github fs-5">
+                </div>
+            </div>
         </div>
-    </div>    
-    <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <!--main navbar-->
+
+    <nav class="navbar  navbar-expand-lg bg-white navbar-light shadow position-sticky top-0">
+        <div class="container">
+            <span class="main-navbar-logo navbar-brand fw-bold fs-3">Bit-Web</span>
+
+            <!--mobile and main menu trigger-->
+
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#mtmm">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--main navbar menu-->
+
+            <div class="navbar-collapse offcanvas offcanvas-end" data-bs-backdrop="static " id="mtmm">
+                <div class="offcanvas-body">
+
+                    <button class="btn btn-closed d-lg-none" data-bs-dismiss="offcanvas"></button>
+
+                    <ul class="navbar-nav ms-auto fw-medium align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item main-navbar-cta px-2 py-1">
+                            <a class="nav-link" href="">Hire Me!</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--mobile menu[display only on mobile and tablets]-->
+
+    <div class="w-100 d-lg-none mobile-menu-special">
+        <div class="mobile-menu-icon-container">
+            <div class="mobile-menu-icon">
+                <a href="tel:+91 8767026956"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href="https://wa.me/918767026956"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="mobile-menu-icon testimonial-trigger">
+                <i class="fa-solid fa-home fa-2x"></i>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href="/"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--heros section-->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col py-5">
+
+                    <h4 class="">
+                        I am MERN stack web developer
+                    </h4>
+                    <span>Javascript is lifeline !</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis eos ex officia quidem
+                        temporibus accusamus adipisci pariatur commodi hic! Sit reiciendis voluptatem distinctio
+                        expedita dolorem eum doloremque ex mollitia!
+
+                    </p>
+                    <div class="">
+                        <p>Contact for project</p>
+                        <button class="btn btn-dark">Let`s Start!</button>
+                    </div>
+                </div>
+                <div class="rotate-text-container col py-5  position-relative">
+                    <h5 class="position-relative" id="hero-rotate-text">|web Developer | App Developer | Digtal
+                        Marketing &nbps;</h5>
+                </div>
+            </div>
 
 
+        </div>
+
+    </div>
 
 
 </body>
+  <script type="text/Javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./script.js"></script>
 
 </html>
