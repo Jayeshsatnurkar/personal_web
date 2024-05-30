@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,19 +28,19 @@
         </div>
     </div>
 
-    <!--main navbar-->
+    <!--main navbar  
 
     <nav class="navbar  navbar-expand-lg bg-white navbar-light shadow position-sticky top-0">
         <div class="container">
             <span class="main-navbar-logo navbar-brand fw-bold fs-3">Bit-Web</span>
 
-            <!--mobile and main menu trigger-->
+            <!--mobile and main menu trigger 
 
             <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#mtmm">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--main navbar menu-->
+            <!--main navbar menu- 
 
             <div class="navbar-collapse offcanvas offcanvas-end" data-bs-backdrop="static " id="mtmm">
                 <div class="offcanvas-body">
@@ -73,7 +73,7 @@
         </div>
     </nav>
 
-    <!--mobile menu[display only on mobile and tablets]-->
+    <!--mobile menu[display only on mobile and tablets]--
 
     <div class="w-100 d-lg-none mobile-menu-special">
         <div class="mobile-menu-icon-container">
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <!--heros section-->
+    <!--heros section--
 
     <div class="container-fluid">
         <div class="container">
@@ -131,6 +131,272 @@
 
 </body>
   <script type="text/Javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./script.js"></script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-web</title>
+
+    <!-- link bootstrap css & js -->
+    <link rel="stylesheet" href="../../projects/BMI_calculator/vendors/bootstrap5/css/bootstrap.min.css">
+    <script src="../../projects/BMI_calculator/vendors/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./vendors/fontawesome-free-6.5.2/fontawesome-free-6.5.2-web/css/all.css">
+
+     <!-- AOS  
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     -->
+
+    <style>
+
+        .about-numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,200px);
+            gap:1.25rem;
+        }
+
+        .about-grid-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .about-number{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- responsive navbar using bootstrap -->
+    <!-- contact navbar -->
+    <div class="container-fluid bg-black py-1 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col navbar-contact-text">
+                    <span class="fw-bolder">+91 8767026956 | jayeshsatnurkar1@gmail.com</span>
+                </div>
+                <div class="col navbar-social-icons text-light d-flex justify-content-end align-items-center gap-3">
+                    <i class="fa-brands fa-facebook fs-5"></i>
+                    <i class="fa-brands fa-instagram fs-5"></i>
+                    <i class="fa-brands fa-linkedin fs-5"></i>
+                    <i class="fa-brands fa-github fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow position-sticky top-0">
+        <div class="container">
+            <!-- main navbar logo -->
+            <span class="main-navbar-logo navbar-brand fw-bold fs-3"><u>Bit-Web</u></span>
+
+            <!-- mobile and tablet main menu trigger -->
+
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#mtmm">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- main navbar menu -->
+            <div class="navbar-collpase offcanvas offcanvas-end" data-bs-backdrop="static" id="mtmm">
+                <div class="offcanvas-body">
+
+                    <button class="btn btn-close d-lg-none" data-bs-dismiss="offcanvas"> </button>
+
+                    <ul class="navbar-nav ms-auto fw-medium align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item main-navbar-cta px-2 py-1">
+                            <a class="nav-link" href="">Hire Me !</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile menu(display only on mobile and tablets) -->
+
+    <div class="w-100 d-lg-none mobile-menu-special">
+        <div class="mobile-menu-icon-container">
+            <div class="mobile-menu-icon">
+                <a href="tel:+91 9226371131"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href="https://wa.me/919226371131"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="mobile-menu-icon testimonial-trigger">
+                <i class="fa-solid fa-home fa-2x"></i>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href="/"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="mobile-menu-icon">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- heros sections -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col py-5">
+                    <!-- Normal Text Intro -->
+                    <h4 class="">
+                        I'm a MERN Stack Web Developer
+                    </h4>
+                    <span>JavaScript for life !</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis harum asperiores iste modi
+                        quidem itaque facilis eius, pariatur eaque maxime placeat ex eveniet rem totam deserunt quas
+                        ipsa dolorum quia aut officia molestiae accusantium cum laboriosam! Nihil minima libero minus
+                        animi error facere cum laborum, aliquam tempora molestiae, nam magnam!
+                    </p>
+                    <div class="">
+                        <p>contact for project</p>
+                        <button class="btn btn-dark">
+                            Let's start !
+                        </button>
+                    </div>
+                </div>
+                <div class="rotate-text-container col py-5 position-relative">
+                    <!-- spinning text animation -->
+                    <h5 class="position-relative text-black fw-bold" id="hero-rotate-text">| Web Developer | App Development | Digital
+                        Marketing &nbsp;</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--perks -->
+
+    <div class="container-fluid" data-aos="fade-down">
+        <div class="row">
+            <div class="col bg-info py-2 text-center">
+                <spna class="fw-bold  fs-4">Web Development</spna>
+            </div>
+            <div class="col bg-danger py-2 text-center">
+                <span class="fw-bold fs-4">App Development</span>
+            </div>
+            <div class="col bg-warning py-2 text-center">
+                <span class="fw-bold  fs-4">Digital Marketing</span>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us section-->
+
+    <div class="container-fluid py-5">
+        <div class="containker">
+            <div class="row">
+                <div class="col">
+                    <div class="about-numbers-grid">
+                        <div class="shadow-lg about-grid-child bg-dark text-light">
+                            <span class="about-number" data-number="100">100+</span>
+                            <span class="about-context">Projects Completed</span>
+                        </div>
+                        <div class="shadow-lg about-grid-child bg-dark text-light">
+                            <span class="about-number" data-number="20">20+</span>
+                            <span class="about-context">Programming Languages</span>
+                        </div>
+
+                        <div class="shadow-lg about-grid-child bg-dark text-light">
+                            <span class="about-number" data-number="1000">1000+</span>
+                            <span class="about-context">Hours of coding</span>
+                        </div>
+                        <div class="shadow-lg about-grid-child ">
+                            <span class="about-number" data-number="450">450+</span>
+                            <span class="about-context">Connections</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- about text data -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid bg-black mt-5 pt-5 pb-2">
+        <div class="container">
+            <div class="row flex-column flex-lg-row">
+                <div class="col">
+                    <span class="navbar-brand fw-bold fs-3 text-light">Bit-Web</span>
+                    <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum veniam aliquid! Iusto
+                        voluptate nisi laborum nulla expedita veritatis deleniti quasi officia quo, labore laboriosam
+                        minus! Quos possimus ex expedita impedit cupiditate magnam quae atque aliquid veritatis ratione
+                        praesentium repellendus, recusandae assumenda beatae, perferendis pariatur voluptatibus! Quam
+                        iste rerum consequatur.
+                    </p>
+                </div>
+                <div class="col">
+                    <span class="fs-3 text-light">Quick Links</span>
+                    <ul class="footer-links">
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>Project</li>
+                        <li>Learn More</li>
+                        <li>Hire Me !</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <iframe class="w-100 h-100" style="min-height:250px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119065.02905779846!2d78.9901093829612!3d21.16106590253875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716864911449!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="end-credits text-center py-2 fw-semibold">
+            All Right Reserved &copy; By Bit-Web techs
+        </div>
+    </div>
+
+
+
+</body>
+
+<!-- JQuery -->
+<script type="text/JavaScript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- custom js -->
 <script src="./script.js"></script>
 
 </html>
